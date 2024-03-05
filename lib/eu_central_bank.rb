@@ -17,7 +17,7 @@ class EuCentralBank < Money::Bank::VariableExchange
 
   SERIALIZER_DATE_SEPARATOR = '_AT_'
   DECIMAL_PRECISION = 5
-  CURRENCIES = %w(USD JPY BGN CZK DKK GBP HUF ILS ISK PLN RON SEK CHF NOK TRY AUD BRL CAD CNY HKD IDR INR KRW MXN MYR NZD PHP SGD THB ZAR).map(&:freeze).freeze
+  CURRENCIES = %w(USD JPY BGN CZK DKK GBP HUF ILS ISK PLN RON SEK CHF NOK TRY AUD BRL CAD CNY HKD IDR INR KRW MXN MYR NZD PHP SGD THB ZAR GBpence).map(&:freeze).freeze
   ECB_RATES_URL = 'https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml'.freeze
   ECB_90_DAY_URL = 'https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml'.freeze
   ECB_ALL_HIST_URL = 'https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.xml'.freeze
